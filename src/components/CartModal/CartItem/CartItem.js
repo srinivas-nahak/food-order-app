@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import styles from "./CartItem.module.css";
 import AuthContext from "../../../store/auth-context";
 
@@ -9,15 +9,9 @@ const CartItem = (props) => {
   const quantityControlHandler = (type) => {
     if (type === "subtract") {
       authContext.onQuantityChange(--props.foodItem.quantity, props.itemIndex);
-      // setQuantity((currentQuantity) => {
-      //   return --currentQuantity;
-      // });
+
       return;
     }
-
-    // setQuantity((currentQuantity) => {
-    //   return ++currentQuantity;
-    // });
 
     authContext.onQuantityChange(++props.foodItem.quantity, props.itemIndex);
   };

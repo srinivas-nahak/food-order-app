@@ -5,7 +5,7 @@ import Card from "../../UI/Card/Card";
 const FoodDescription = (props) => {
   return (
     <section className={styles["food-description-holder"]}>
-      <img src={foodImage} />
+      <img src={foodImage} alt="Food Image" />
       <Card className={styles["food-description-card"]}>
         <h1>Delicious Food, Delivered To You</h1>
         <p>

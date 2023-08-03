@@ -4,21 +4,6 @@ import styles from "./FoodList.module.css";
 import { useEffect, useState } from "react";
 
 const FoodList = (props) => {
-  const [translationValue, setTranslationValue] = useState(2);
-
-  useEffect(() => {
-    //setTranslationValue(2);
-    const timeOut = setTimeout(() => {
-      setTranslationValue(0);
-    }, 700);
-
-    return () => {
-      clearTimeout(timeOut);
-    };
-  }, []);
-
-  //const animation = "";
-
   const foodList = [
     {
       id: "f1",
