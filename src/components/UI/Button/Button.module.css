@@ -1,0 +1,15 @@
+.Button {
+  margin: 0.6rem auto;
+  border-radius: 999px;
+  padding: 0.8rem 3rem;
+  background-color: brown;
+  color: white;
+  border: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.Button:hover {
+  background-color: rgb(133, 32, 32);
+  transition: background-color 0.2s;
+}

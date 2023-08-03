@@ -1,0 +1,25 @@
+@keyframes slide-animation {
+  0% {
+    transform: translateY(2rem);
+  }
+  50% {
+    background-color: blueviolet;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.food-list-container {
+  position: relative;
+  width: 70%;
+  margin: 13% auto;
+  padding: 2.5rem 3rem;
+  background-color: white;
+  animation: slide-animation 1.5s ease-in-out;
+
+  /* animation-name: slide-animation;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out; */
+  /* animation-direction: reverse; */
+}
