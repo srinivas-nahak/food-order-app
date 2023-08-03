@@ -2,9 +2,9 @@
   0% {
     transform: translateY(2rem);
   }
-  50% {
+  /* 50% {
     background-color: blueviolet;
-  }
+  } */
   100% {
     transform: translateY(0);
   }
